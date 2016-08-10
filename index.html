@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>Fish</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-3.1.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	</head>
+	<body >
+		
+		<div id="allBackground">
+			<div id="allCanvas">
+				<canvas id="canvas2"><p>你的浏览器不支持canvas</p></canvas>
+				<canvas id="canvas1"><p>你的浏览器不支持canvas</p></canvas>
+			</div>
+			
+			<img src="img/restart.png" id="restart"></img>
+			
+			<div id="startTip">
+				<div id="tipContext">
+					<!--<h3>游戏说明</h3>
+					<p>&nbsp;&nbsp;通过鼠标控制大鱼去吃果实，然后去喂小鱼，从而得到分数，如果不喂小鱼，小鱼则经过一段时间后死亡,游戏结束。</p>-->
+					<button id="btnStartGame" class="btn">开始游戏</button>
+					<button id="btnGameInstruction" class="btn" data-toggle = "modal" data-target="#instruction">游戏说明</button>
+				</div>
+			</div>
+			<div class="modal fade" id="instruction" role="dialog" tabindex="-1" aria-labelledby="gameInstruction" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss = "modal" aria-hidden="true">&times;</button>
+							<h3 class="modal-title" id="modalTitle">游戏说明</h3>
+						</div>
+						<div class="modal-body">
+							<p>&nbsp;&nbsp;通过鼠标控制大鱼去吃果实，然后去喂小鱼，从而得到分数，如果不喂小鱼，小鱼则经过一段时间后死亡,游戏结束。</p>
+							<p>分值说明：蓝色果实：200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;橙色果实：100</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+
+		<script type="text/javascript" src="js/main.js" ></script>
+		<script type="text/javascript" src="js/commonFunctions.js" ></script>
+		<script type="text/javascript" src="js/drawCanvas2.js" ></script>
+		<script type="text/javascript" src="js/ane.js" ></script>
+		<script type="text/javascript" src="js/fruits.js" ></script>
+		<script type="text/javascript" src="js/bigFish.js" ></script>
+		<script type="text/javascript" src="js/action.js" ></script>
+		<script type="text/javascript" src="js/smallFish.js" ></script>
+		<script type="text/javascript" src="js/data.js" ></script>
+		<script type="text/javascript" src="js/eatFruitEffect.js" ></script>
+		<script type="text/javascript" src="js/feedSmallFishEffect.js" ></script>
+		<script type="text/javascript" src="floater.js" ></script>
+	</body>
+</html>
